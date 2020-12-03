@@ -1,0 +1,22 @@
+Go routines
+
+By default go rutines uses one CPU core.
+
+Concurency is not parallelism!
+
+one core:
+Concurrency - we can have multiple threads executing code. If one thread blocks, another one is picked up and worked on
+With one core only one go routine is picked up at a time. If the go routine is finised or blocked, then another go routine is picked up by the go scheduler. 
+
+multiple cores:
+pharellism - multiple threads executed at the same time. Requires multiple CPUs
+
+
+
+When runnig/launching a program a 'main go routine' is created. 
+Chiled routines are created by the 'go' keyword.
+
+
+Channels
+Use channels to send messages between main routune and child routines
+

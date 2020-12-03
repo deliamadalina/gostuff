@@ -1,0 +1,22 @@
+Concrete type:
+
+map
+struct
+int
+string
+englishBot
+
+
+Interface type:
+interface
+
+
+Notes:
+Interfaces are not genertic tyoes!
+Interfaces are implicit! - don't have to write eny explicit link
+Interfaces are a contract to help manage types   - are not helping you to se code, don't help you not to make any basic mistake in the code
+
+understaiding to read interfaces is step one
+
+
+

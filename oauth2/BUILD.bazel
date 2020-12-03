@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
+
+go_library(
+    name = "go_default_library",
+    srcs = [
+        "limiter.go",
+        "prefix.go",
+        "transport.go",
+    ],
+    importpath = "source.fitbit.com/ops/cosmos/fitbit/common/libraries/oauth2",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//vendor/golang.org/x/oauth2/internal:go_default_library",
+        "//vendor/golang.org/x/sync/semaphore:go_default_library",
+    ],
+)
+
+go_test(
+    name = "go_default_test",
+    srcs = ["prefix_test.go"],
+    embed = [":go_default_library"],
+    deps = ["//vendor/golang.org/x/sync/semaphore:go_default_library"],
+)

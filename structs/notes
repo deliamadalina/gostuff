@@ -1,0 +1,26 @@
+Value Types:
+// use poinetrs to change this things in a function
+int
+float
+string
+bool
+structs
+
+Reference Types:
+// need not worry about poinetrs with this
+slices
+maps
+channels
+poinetrs
+functions
+
+
+
+slice:
+When craete a slice, Go will automatically create an array and a structure that records the length of the slice, the capacity of the slice, and a reference to the underlaying array
+
+
+
+map:
+all the keys are of the same type 
+all the values are of the same type
